@@ -34,13 +34,6 @@
         />
 
     <android.support.design.widget.TabItem
-        android:id="@+id/tabChats"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAlignment="center"
-        android:text="TRACK ORDER" />
-
-    <android.support.design.widget.TabItem
         android:id="@+id/tabChats12"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

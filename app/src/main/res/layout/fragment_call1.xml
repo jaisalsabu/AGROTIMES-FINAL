@@ -1,10 +1,10 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:orientation="vertical"
-    android:background="@drawable/aa">
+    android:background="@drawable/gradient_bg"
+    android:orientation="vertical">
 
 
   <TextView
@@ -14,24 +14,24 @@
       android:layout_marginLeft="20dp"
       android:layout_marginTop="20dp"
       android:text="Name"
-      android:textSize="16dp"
       android:textColor="@color/white"
-      android:textStyle="bold"/>
+      android:textSize="16dp"
+      android:textStyle="bold" />
 
   <TextView
       android:id="@+id/docyou3"
       android:layout_width="256dp"
       android:layout_height="47dp"
-      android:background="@drawable/bt"
       android:layout_marginLeft="100dp"
       android:layout_marginTop="5dp"
-      android:textStyle="bold"
-      android:padding="10dp"
+      android:background="@drawable/bt"
       android:drawableStart="@drawable/username"
       android:drawableLeft="@drawable/username"
+      android:padding="10dp"
+      android:text="TextView"
       android:textColor="@color/black"
       android:textSize="17dp"
-      android:text="TextView" />
+      android:textStyle="bold" />
 
   <TextView
       android:id="@+id/textView10"
@@ -48,16 +48,16 @@
       android:id="@+id/dw"
       android:layout_width="256dp"
       android:layout_height="47dp"
-      android:textStyle="bold"
       android:layout_marginLeft="100dp"
+      android:layout_marginTop="5dp"
+      android:background="@drawable/bt"
+      android:drawableStart="@drawable/phone"
+      android:drawableLeft="@drawable/phone"
+      android:padding="10dp"
+      android:text="TextView"
       android:textColor="@color/black"
       android:textSize="17dp"
-     android:background="@drawable/bt"
-      android:drawableLeft="@drawable/phone"
-      android:drawableStart="@drawable/phone"
-      android:padding="10dp"
-      android:layout_marginTop="5dp"
-      android:text="TextView" />
+      android:textStyle="bold" />
 
   <TextView
       android:id="@+id/textView11"
@@ -74,16 +74,16 @@
       android:id="@+id/demail"
       android:layout_width="256dp"
       android:layout_height="47dp"
+      android:layout_marginLeft="100dp"
+      android:layout_marginTop="5dp"
       android:background="@drawable/bt"
       android:drawableStart="@drawable/email"
       android:drawableLeft="@drawable/email"
       android:padding="10dp"
-      android:layout_marginLeft="100dp"
-      android:layout_marginTop="5dp"
       android:text="TextView"
-      android:textStyle="bold"
       android:textColor="@color/black"
-      android:textSize="17dp" />
+      android:textSize="17dp"
+      android:textStyle="bold" />
 
   <TextView
       android:id="@+id/textView12"
@@ -100,16 +100,16 @@
       android:id="@+id/dob"
       android:layout_width="256dp"
       android:layout_height="47dp"
-      android:background="@drawable/bt"
-      android:drawableLeft="@drawable/datee"
-      android:drawableStart="@drawable/datee"
-      android:padding="10dp"
       android:layout_marginLeft="100dp"
       android:layout_marginTop="5dp"
+      android:background="@drawable/bt"
+      android:drawableStart="@drawable/datee"
+      android:drawableLeft="@drawable/datee"
+      android:padding="10dp"
       android:text="TextView"
-      android:textStyle="bold"
       android:textColor="@color/black"
-      android:textSize="17dp"/>
+      android:textSize="17dp"
+      android:textStyle="bold" />
 
   <TextView
       android:id="@+id/textView14"
@@ -126,17 +126,16 @@
       android:id="@+id/daddress"
       android:layout_width="256dp"
       android:layout_height="47dp"
+      android:layout_marginLeft="100dp"
+      android:layout_marginTop="5dp"
+      android:background="@drawable/bt"
       android:drawableStart="@drawable/place"
       android:drawableLeft="@drawable/place"
       android:padding="10dp"
-      android:layout_marginLeft="100dp"
-      android:background="@drawable/bt"
-      android:layout_marginTop="5dp"
-      android:textStyle="bold"
+      android:text="TextView"
       android:textColor="@color/black"
       android:textSize="17dp"
-      android:text="TextView"
-      />
+      android:textStyle="bold" />
 
   <TextView
       android:id="@+id/textView13"
@@ -153,12 +152,12 @@
       android:id="@+id/dgender"
       android:layout_width="256dp"
       android:layout_height="47dp"
-      android:background="@drawable/bt"
-      android:drawableLeft="@drawable/username"
-      android:drawableStart="@drawable/username"
-      android:padding="10dp"
       android:layout_marginLeft="100dp"
       android:layout_marginTop="5dp"
+      android:background="@drawable/bt"
+      android:drawableStart="@drawable/username"
+      android:drawableLeft="@drawable/username"
+      android:padding="10dp"
       android:text="TextView"
       android:textColor="@color/black"
       android:textSize="17dp"
@@ -179,12 +178,12 @@
       android:id="@+id/rdname"
       android:layout_width="256dp"
       android:layout_height="47dp"
+      android:layout_marginLeft="100dp"
+      android:layout_marginTop="5dp"
       android:background="@drawable/bt"
       android:drawableStart="@drawable/enter"
       android:drawableLeft="@drawable/enter"
       android:padding="10dp"
-      android:layout_marginLeft="100dp"
-      android:layout_marginTop="5dp"
       android:text="TextView"
       android:textColor="@color/black"
       android:textSize="17dp"

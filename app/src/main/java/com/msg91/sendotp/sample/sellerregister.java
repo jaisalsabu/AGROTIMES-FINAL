@@ -65,7 +65,7 @@ public class sellerregister extends AppCompatActivity {
                                 public void onResponse(String response) {
 //If we are getting success from server
                                     Toast.makeText(sellerregister.this, response, Toast.LENGTH_LONG).show();
-                                    if (response.equals("Registration Successful")) {
+                                    if (response.equals("Success")) {
 
                                         new SweetAlertDialog(sellerregister.this, SweetAlertDialog.WARNING_TYPE)
                                                 .setTitleText("Registration Success")
@@ -129,6 +129,7 @@ public class sellerregister extends AppCompatActivity {
                     requestQueue.add(stringRequest);
                 } else
                 {
+                    Toast.makeText(sellerregister.this,"Unsuccesfull Attempt",Toast.LENGTH_LONG).show();
 
                 }
             }

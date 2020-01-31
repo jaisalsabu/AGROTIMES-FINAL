@@ -33,7 +33,7 @@ SharedPreferences sh;
         setSupportActionBar(toolbar);
         sh=getSharedPreferences("Official",MODE_PRIVATE);
         tabLayout = findViewById(R.id.tablayout);
-        tabChats = findViewById(R.id.tabChats);
+        //tabChats = findViewById(R.id.tabChats);
 SharedPreferences.Editor e=sh.edit();
 e.putBoolean("ph",true);
 

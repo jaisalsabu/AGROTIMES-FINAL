@@ -45,8 +45,8 @@ import static android.content.Context.MODE_PRIVATE;
 public class ChatFragment extends Fragment {
     EditText trackid;
     Button serch;
-    TextView tproductname,tproductdetails,tracknos,trackprice;
-    String a,b,c,d;
+    TextView tproductname,tproductdetails;
+    String a,b;
     SharedPreferences sh;
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -58,8 +58,6 @@ public class ChatFragment extends Fragment {
         serch=root.findViewById(R.id.tr_btn);
         tproductname=root.findViewById(R.id.tpn);
         tproductdetails=root.findViewById(R.id.tpd);
-        tracknos=root.findViewById(R.id.tnos);
-        trackprice=root.findViewById(R.id.tpr);
    sh=getActivity().getSharedPreferences("Official",MODE_PRIVATE);
 
 
@@ -86,17 +84,10 @@ public class ChatFragment extends Fragment {
                                         JSONArray jsonArray = new JSONArray(response);
                                         for (int i = 0; i < jsonArray.length(); i++) {
                                             JSONObject json_obj = jsonArray.getJSONObject(i);
-                                            a=json_obj.getString("product_name");
-                                            b=json_obj.getString("product_details");
-                                            c=json_obj.getString("nos");
-                                            d=json_obj.getString("price");
+                                            a=json_obj.getString("phone");
+                                            b=json_obj.getString("STATUS");
 
 
-
-                                            tproductname.setText(a);
-                                            tproductdetails.setText(b);
-                                            tracknos.setText(c);
-                                            trackprice.setText(d);
                                         }
 //Toast.makeText(Recharge.this, "your new balnce is "+ba, Toast.LENGTH_LONG).show();
                                     } catch (JSONException e) {
@@ -105,12 +96,11 @@ public class ChatFragment extends Fragment {
 
 
 
-                                    if (response.contains("enter valid data")) {
-                                        trackid.setError("Enter a valid Track ID");
+                                    if (response.contains("success")) {
+                                        tproductname.setText(a);
+                                        tproductdetails.setText(b);
                                     }
 
-
-                                    //   Toast.makeText(Signin.this, "success", Toast.LENGTH_LONG).show();
 
                                 }
 

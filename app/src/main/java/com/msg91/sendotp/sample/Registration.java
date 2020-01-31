@@ -75,41 +75,42 @@ public class Registration extends AppCompatActivity {
 //    String emailPattern = "@gmail.com";
 
     public void registerButton(View view) {
-        if (name.getText().toString().isEmpty()){
+        int id = view.getId();
+        switch (id) {
+            case R.id.register_button: {
+                if (name.getText().toString().isEmpty()) {
 
-          name.setError("Empty Field");
-        }
-        else if ( email.getText().toString().isEmpty()){
+                    name.setError("Empty Field");
+                } else if (email.getText().toString().isEmpty()) {
 
-            email.setError("Empty Field");
-        }
-        else if (dob.getText().toString().isEmpty()){
-
-
-            dob.setError("Empty Field");
+                    email.setError("Empty Field");
+                } else if (dob.getText().toString().isEmpty()) {
 
 
-        }
-        else if (address.getText().toString().isEmpty()){
-            address.setError("Empty Field");
+                    dob.setError("Empty Field");
 
-        }
+
+                } else if (address.getText().toString().isEmpty()) {
+                    address.setError("Empty Field");
+
+                }
 //        else if (email.getText().toString().trim().matches("@gmail.com")){
 //            Toast.makeText(this,"Enter Valid Email",Toast.LENGTH_SHORT).show();
 //
 //
 //        }
-        else
-            {
-                Intent i=new Intent(getApplicationContext(), regtwo.class);
-                i.putExtra("name",name.getText().toString());
-                i.putExtra("email",email.getText().toString());
-                i.putExtra("dob",dob.getText().toString());
-                i.putExtra("address",address.getText().toString());
+                else {
+                    Intent i = new Intent(getApplicationContext(), regtwo.class);
+                    i.putExtra("name", name.getText().toString());
+                    i.putExtra("email", email.getText().toString());
+                    i.putExtra("dob", dob.getText().toString());
+                    i.putExtra("address", address.getText().toString());
 
-            startActivity(i);
+                    startActivity(i);
+                }
+
             }
-
+        }
     }
 
 
